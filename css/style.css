@@ -24,25 +24,35 @@ body {
 
 button {
     font-size: 24px;
-    padding: 20px;
-    border-radius: 30px;
+    padding: 20px 30px;
+    border-radius: 50px;
     border: 1px solid transparent;
     outline: none;
+}
+
+header, .column-jumbo, footer, .black-button {
+    color: white;
+}
+
+li, .small-button {
+    font-size: 20px;
 }
 
 /*header*/
 
 header {
-    background-color: rgb(49, 97, 224);
+    background-color: rgb(37, 94, 233);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 25px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 } 
 
 .header-container {
     width: 75%;
-    height: 50%;
 }
 
 .column-25 {
@@ -81,12 +91,9 @@ ul {
 li {
     text-align: center;
     width: 20%;
-    color: white;
-    font-size: 20px;
 }
 
-.login {
-    font-size: 20px; 
+.small-button { 
     background-color: white;
     padding: 10px;
 }
@@ -102,10 +109,12 @@ li {
     background-image: url(../img/jumbo.png);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 95px;
 }
 
 .small-container {
-    width: 65%;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .column-100-pink {
@@ -132,19 +141,17 @@ h1 {
 
 h1, .intro {
     padding: 20px;
-    color: white;
 }
 
 .black-button {
     background-color: rgb(22, 22, 22);
-    color: white;
     margin-left: 25px;
 }
 
 /*second and fourth section*/
 
 .background-white {
-    height: 600px;
+    height: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,24 +164,48 @@ h1, .intro {
 
 .column-60 {
     width: 60%;
-    background-color: rgb(106, 170, 255);
-    border: 1px dashed black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .column-40 {
     width: 40%;
-    background-color: rgb(255, 170, 199);
-    border: 1px dashed black;
 }
+
+.text {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+    
+
+.small-text {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
 
 /*third section*/
 
 .background-gray-1 {
-    height: 600px;
+    height: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: gray;
+    background-color: rgb(246, 246, 246);
+}
+
+.wave {
+    height: 50px;
+    background-image: url(../img/wave.svg);
+    opacity: 0.04;
+}
+
+.upside-down {
+    transform: rotate(180deg);
 }
 
 /*fifth section*/
